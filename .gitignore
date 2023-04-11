@@ -1,3 +1,6 @@
+*.sketch
 .env
+*.xd
+*.fig
 node_modules
-db
+.DS_Store
