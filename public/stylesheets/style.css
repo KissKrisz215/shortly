@@ -1,0 +1,17 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --cyan: hsl(180, 66%, 49%);
+    --dark-violet: hsl(257, 27%, 26%);
+    --light-violet:  hsl(257, 27%, 30%);
+    --red: hsl(0, 87%, 67%);
+   --gray: hsl(0, 0%, 75%);
+   --gray-violet: hsl(257, 7%, 90%);
+   --verydark-blue: hsl(255, 11%, 22%);
+   --verydark-violet: hsl(260, 8%, 14%);
+   --fs-xxl:3.7rem;
+}
