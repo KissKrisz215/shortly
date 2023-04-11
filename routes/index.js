@@ -3,8 +3,10 @@ const router = express.Router();
 const tinyurl = require("tinyurl-api");
 const linkModel = require("../models/link.model");
 
+const link = "https://lustrous-jalebi-2048bf.netlify.app/";
+
 /* GET home page */
-router.get('/', (req, res, next) => res.render('index'));
+router.get(link + '/', (req, res, next) => res.render('index'));
 
 /*POST home page  */
 
