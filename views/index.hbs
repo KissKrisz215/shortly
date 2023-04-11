@@ -1,0 +1,164 @@
+<div class="container-fluid position-relative overflow-hidden">
+    <div class="container pt-3 mb-5">
+   <nav class="navbar navbar-expand-lg">
+      <a class="navbar-brand" href="/"><img src="./images/logo.svg" alt="logo"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle Navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav w-100 rounded-3 justify-content-between">
+            <div class="d-flex navbar-links">
+          <li class="nav-item">
+            <a class="nav-link" href="/">Features</a>
+          </li>
+           <li class="nav-item">
+            <a class="nav-link" href="/">Pricing</a>
+          </li>
+           <li class="nav-item">
+            <a class="nav-link" href="/">Resources</a>
+          </li>
+          </div>
+          <div class="d-flex gap-3">
+          <li class="nav-item">
+               <a class="btn btn-outline-secondary border-0" href="/">Login</a>
+          </li>
+             <li class="nav-item">
+               <a class="btn btn-cyan text-white rounded-5 bg-cyan border-0" href="/">Sign Up</a>
+          </li>
+          </div>
+        </ul>
+      </div>
+   </nav>
+   </div>
+    <div id="main-top" class="container" style="min-height:600px">
+        <div class="row d-flex align-items-center">
+            <div class="col-md-6 col-sm-12 order-1 order-md-0">
+               <h1 class="fw-bold text-darkviolet fs-xxl">More than just shorter links</h1>
+               <p class="text-muted fs-5 opacity-75">  Build your brand’s recognition and get detailed insights 
+  on how your links are performing.</p>
+               <a class="btn btn-cyan bg-cyan text-white rounded-5 border-0 px-4 py-2" href="">Get started</a>
+            </div>
+            <div class="col-md-6 col-sm-12 order-0 order-md-1">
+                <img src="./images/illustration-working.svg" alt="illustration-working">
+            </div>
+        </div>
+      </div>
+</div>
+<div class="container-fluid bg-grayviolet d-flex align-items-center position-relative" style="min-height:800px;">
+   <div class="container w-100 p-4 rounded-2 position-absolute top-0 start-50 translate-middle">
+    <div>
+        <form id="form-shorten" class="d-flex bg-darkviolet shorten-bg  p-5 gap-4 justify-content-center" action="/" method="post">
+            <input class="form-control w-75" type="text" name="link" id="" placeholder="Shorten a link here..." required>
+            <button onclick="addStyling()" class="btn btn-cyan bg-cyan text-white rounded-2 border-0 px-4 py-3" type="submit">Shorten It!</button>
+        </form>
+        </div>
+        <div class="row">
+          <div class="col">
+         {{#each getData}}
+         <div id="links" class="row">
+          <div class="bg-light mt-3 p-3 d-flex justify-content-between rounded-2 flex form-result">
+               <div class="d-flex align-items-center justify-content-center">
+                <a class="fs-5 text-decoration-none text-dark" target="_blank" href="{{originalLink}}">{{originalLink}}</a>
+               </div>
+               <div class="d-flex gap-4 align-items-center justify-content-center form-result">
+                 <a id="link" class="text-cyan fs-5 align-self-center text-decoration-none" target="_blank" href="{{shortLink}}">{{shortLink}}</a>
+                 <button onclick="copyFunc()" class="copyButton btn btn-cyan bg-cyan text-white py-2 px-3">Copy</button>
+               </div>
+               </div>
+         </div>
+         {{/each}}
+          </div>
+          </div>
+      </div>
+    <div class="container pt-5 pb-5">
+       <div class="d-flex justify-content-center pb-5 pt-4" > 
+          <div id="advanced-header" class="w-50 text-center pt-5 pb-3 mt-5">
+              <h1 class="fw-bold mb-3 pt-5">Advanced Statistics</h1>
+              <p class="text-muted opacity-75">Track how your links are performing across the web with our 
+  advanced statistics dashboard.</p>
+          </div>
+       </div>
+       <div id="list-items" class="d-flex p-4 mb-5 position-relative">
+        <div id="box-top" class="col bg-white p-4 position-relative rounded-2">
+            <img  class="p-4 rounded-circle bg-darkviolet position-absolute top-0 start-25 translate-middle-y" src="./images/icon-brand-recognition.svg" alt="icon brand recognition">
+            <div class="py-5">
+        <h4 class="fw-bold">Brand Recognition</h4>
+        <p class="text-muted opacity-75">Boost your brand recognition with each click. Generic links don’t 
+  mean a thing. Branded links help instil confidence in your content.</p>
+  </div>
+        </div>
+        <div class="col-1 md-linear-stripe align-self-center">
+
+        </div>
+         <div id="box-middle" class="col bg-white p-4 position-relative rounded-2">
+            <img class=" p-4 rounded-circle bg-darkviolet position-absolute top-0 start-25 translate-middle-y" src="./images/icon-detailed-records.svg" alt="icon detailed records">
+            <div class="py-5">
+        <h4 class="fw-bold">Detailed Records</h4>
+         <p class="text-muted opacity-75">  Gain insights into who is clicking your links. Knowing when and where 
+  people engage with your content helps inform better decisions.</p>
+      </div>
+        </div>
+        <div class="col-1 md-linear-stripe align-self-center">
+
+        </div>
+         <div id="box-bottom" class="col bg-white p-4  position-relative rounded-2">
+            <img class=" p-4 rounded-circle bg-darkviolet position-absolute top-0 start-25 translate-middle-y" src="./images/icon-fully-customizable.svg" alt="icon fully customizable">
+            <div class="py-5">
+         <h4 class="fw-bold">Fully Customizable</h4>
+          <p class="text-muted opacity-75">  Improve brand awareness and content discoverability through customizable 
+  links, supercharging audience engagement.</p>
+  </div>
+        </div>
+       </div>
+    </div>
+</div>
+<div class="container-fluid d-flex justify-content-center align-items-center boost-bg bg-darkviolet p-5">
+    <div class="text-center text-white d-flex flex-column gap-3 align-items-center p-4">
+    <h2 class="fw-bold">Boost your links today</h2>
+    <a class="w-50 btn-cyan btn bg-cyan text-white rounded-5 border-0 px-4 py-2" href="">Get started</a>
+    </div>
+</div>
+<div class="container-fluid bg-dark text-white p-5">
+   <div class="container p-4">
+      <div class="row d-flex footer-wrapper">
+        <div class="col">
+          <h1 class="fw-bold pb-5">Shortly</h1>
+        </div>
+        <div class="col">
+           <div class="row footer-wrapper">
+            <div class="col">
+              <h5>Features</h5>
+              <ul class="list-unstyled">
+                <li><a class="text-decoration-none text-secondary opacity-100 link-cyan" href="/">Link Shortening</a></li>
+                 <li><a class="text-decoration-none text-secondary opacity-100 link-cyan" href="/"> Branded Links</a></li>
+                  <li><a class="text-decoration-none text-secondary opacity-100 link-cyan" href="/">Analytics</a></li>
+              </ul>
+            </div>
+                <div class="col">
+<h5> Pricing</h5>
+    <ul class="list-unstyled">
+                <li><a class="text-decoration-none text-secondary opacity-100 link-cyan" href="/">Blog</a></li>
+                 <li><a class="text-decoration-none text-secondary opacity-100 link-cyan" href="/"> Developers</a></li>
+                  <li><a class="text-decoration-none text-secondary opacity-100 link-cyan" href="/">Support</a></li>
+              </ul>
+            </div>
+                <div class="col">
+<h5> Resources</h5>
+    <ul class="list-unstyled">
+                <li><a class="text-decoration-none text-secondary opacity-100 link-cyan" href="/">  About</a></li>
+                 <li><a class="text-decoration-none text-secondary opacity-100 link-cyan" href="/">Our Team</a></li>
+                  <li><a class="text-decoration-none text-secondary opacity-100 link-cyan" href="/"> Careers</a></li>
+                  <li><a class="text-decoration-none text-secondary opacity-100 link-cyan" href="/"> Contact</a></li>
+              </ul>
+            </div>
+           </div>
+        </div>
+        <div class="col d-flex gap-3 justify-content-center">
+        <a href=""><img src="/images/icon-facebook.svg" alt="facebook icon"></a>
+        <a href=""><img src="/images/icon-twitter.svg" alt="twitter icon"></a>
+        <a href=""><img src="/images/icon-pinterest.svg" alt="pinterest icon"></a>
+        <a href=""><img src="/images/icon-instagram.svg" alt="instagram icon"></a>
+        </div>  
+      </div>
+   </div>
+</div>
