@@ -15,3 +15,62 @@
    --verydark-violet: hsl(260, 8%, 14%);
    --fs-xxl:3.7rem;
 }
+
+.text-darkviolet{
+    color:var(--dark-violet);
+}
+
+.shorten-bg{
+    background-image: url('/images/bg-shorten-desktop.svg');
+    background-size:cover;
+}
+.boost-bg{
+    background-image: url('/images/bg-boost-desktop.svg');
+    background-size:cover;
+    background-position: center;
+}
+
+.bg-darkviolet{
+    background-color: var(--dark-violet);
+}
+.bg-lightviolet{
+    background-color: var(--light-violet);
+}
+
+.bg-cyan{
+    background-color: var(--cyan);
+}
+.bg-grayviolet{
+    background-color: var(--gray-violet);
+}
+
+.fs-xxl{
+    font-size:var(--fs-xxl)
+}
+
+.rounded-circle{
+    border-radius: 50%;
+}
+.btn-cyan:hover{
+    background-color:  hsl(180, 66%, 60%);;
+}
+.link-cyan:hover{
+    color:var(--cyan) !important;
+}
+.text-cyan{
+    color:var(--cyan);
+}
+
+
+  input:focus:invalid {
+    border:2px solid red;
+    color:red;
+}
+
+.mt-6{
+    margin-top:5.5rem;
+}
+
+.mb-8{
+    margin-bottom:12rem !important;
+}
