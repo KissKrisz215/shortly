@@ -1,4 +1,4 @@
-#Shorty - URL Shortener Application
+#Shortly - URL Shortener Application
 
 ## Demo
 
