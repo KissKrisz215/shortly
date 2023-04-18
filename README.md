@@ -9,7 +9,6 @@
 
 ## Technologies
 
-* P5.js version: 1.6.0,
 * Express version: 4.18.2,
 * Handlebars version: 4.2.0,
 * Mongoose version: 7.0.3,
